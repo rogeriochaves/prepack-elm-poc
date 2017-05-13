@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "elm": "^0.18.0",
+    "google-closure-compiler": "^20170423.0.0",
     "prepack": "^0.2.0",
     "uglify-js": "^2.8.22"
   },
