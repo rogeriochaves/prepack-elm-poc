@@ -13,7 +13,7 @@ sed -e 's/_elm_lang\$core\$Set\$toList/void/g' -i.bak main.prepacked.js # fix: r
 sed -e "s/Main:/'Main':/" -i.bak main.prepacked.js # prevent Main from being mashed when calling Elm.Main
 sed -e "s/embed:/'embed':/" -i.bak main.prepacked.js # prevent embed from being mashed when calling Elm.Main.embed
 sed -e "s/fullscreen:/'fullscreen':/" -i.bak main.prepacked.js # prevent embed from being mashed when calling Elm.Main.fullscreen
-java -jar node_modules/google-closure-compiler/compiler.jar --js main.prepacked.js --compilation_level ADVANCED --js_output_file main.prepacked.closured.js
+java -jar ../node_modules/google-closure-compiler/compiler.jar --js main.prepacked.js --compilation_level ADVANCED --js_output_file main.prepacked.closured.js
 
 # uglify
 uglifyjs --compress unused,dead_code main.prepacked.js > main.prepacked.uglified.js
