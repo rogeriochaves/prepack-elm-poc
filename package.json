@@ -1,0 +1,17 @@
+{
+  "name": "prepack-elm-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "elm": "^0.18.0",
+    "prepack": "^0.2.0",
+    "uglify-js": "^2.8.22"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "./minify.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
